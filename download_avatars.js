@@ -5,6 +5,9 @@ var fs = require('fs');
 var owner = process.argv[2];
 var repo = process.argv[3];
 
+if (!owner || !repo){
+    return console.log ("error message: you need insert both arguments") 
+}
 
 console.log('Welcome to the GitHub Avatar Downloader!');
 
