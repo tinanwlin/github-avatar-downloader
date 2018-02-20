@@ -11,8 +11,6 @@ function getRepoContributors(repoOwner, repoName, cb) {
           'User-Agent': 'request',
           'Authorization': 'token: ' + token.GITHUB_TOKEN
       }
-
-
     };
 
   request(options, function(err, res, body) {
